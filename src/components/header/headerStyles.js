@@ -1,13 +1,14 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const HeaderWrap = styled.div`
+background-color: #002b34;  
 width: 100%;
-border: 1px solid blue;
-padding: 14px 0;
-background-color: #002b34;
+display: flex;
+flex-flow: column wrap;
+align-items: center;
 
-h1 {
-    margin-left: 14px;
-    color: #fff;
+@media (min-width: 250px) {
+  flex-flow: row wrap;
+  justify-content: space-between; 
 }
-`
+`;

@@ -1,16 +1,30 @@
 import React from "react";
-import {ContentWrap} from './contentStyles'
+import { ContentWrap } from "./contentStyles";
 
 function Content() {
   return (
-  <ContentWrap>
-    <h3>Some Heading</h3>
-    <div className="boxWrap">
-      <div className="img"></div>
-      <div className="cont"></div>
-    </div>
-  </ContentWrap>
-  )
+    <ContentWrap>
+      <h2>Some Heading</h2>
+        <div className="box">
+        <div className="cont">
+          <h1>Titulo</h1>
+          <p>Texto Texto Texto Texto Texto Texto Texto Texto </p>
+        </div>
+        <div className="cont">
+          <h1>Titulo</h1>
+          <p>Texto Texto Texto Texto Texto Texto Texto Texto </p>
+        </div>
+        <div className="cont">
+          <h1>Titulo</h1>
+          <p>Texto Texto Texto Texto Texto Texto Texto Texto </p>
+        </div>
+        <div className="cont">
+          <h1>Titulo</h1>
+          <p>Texto Texto Texto Texto Texto Texto Texto Texto </p>
+        </div>
+      </div>
+    </ContentWrap>
+  );
 }
 
 export default Content;

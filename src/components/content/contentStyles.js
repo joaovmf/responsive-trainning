@@ -1,22 +1,15 @@
 import styled from "styled-components";
 
-const media = {
-  desktop: "@media(min-width: 1000px)",
-};
 
 export const ContentWrap = styled.div`
-width: 100%;
-border: 1px solid green;
+width: 90%;
+border: 3px solid green;
 display: flex;
 flex-flow: column nowrap;
 justify-content: center;
 align-items: center;
 
-${media.desktop} {
-    width: 1000px;
-}
-
-h3 {
+h2 {
     font-size: 20px;
     font-weight: bold;
     color: gray;
@@ -24,36 +17,37 @@ h3 {
     align-self: flex-start;
 }
 
-.boxWrap {  
+.box {  
 width: 90%;
-border 1px solid blue;
+border: 3px solid blue;
 
-${media.desktop} {
+@media(min-width: 950px) {
     display: flex;
     flex-flow: row nowrap;
-    align-items: center;
     justify-content: space-between; 
-}
-    .img {
-        width: 100%;
-        height: 150px;
-        background-color:gray;
+  }
 
-        ${media.desktop} {  
-            width: 48%;
-        }
-    }
-    .cont{
-        margin-top: 10px;
-        width: 100%;
-        height: 150px;
-        background-color:gray;
-        
-        ${media.desktop} {
-            margin: 0;
-            width: 48%;
-        }
+  .cont{
+    border: 3px solid pink;
+      width: 100%;
+      height: 400px;
+  }
+  .cont:hover {
+     background: #76f5f1;
+  }
 
-    }
+  h1 {
+    font-weight: bold;
+    margin-left: 14px;
+    align-self: flex-start;
+  }
+
+  p {
+   font-size: 20px;
+    font-weight: bold;
+    margin-left: 14px;
+    align-self: flex-start;
+  }
+ 
 }
 `;
